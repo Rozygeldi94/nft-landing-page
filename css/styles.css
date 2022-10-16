@@ -1,0 +1,31 @@
+@import "~normalize.css";
+@font-face {
+  font-family: "Branda-yolq";
+  src: url(../assets/fonts/Branda-yolq.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Military_RPG";
+  src: url(../assets/fonts/Military_RPG.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  background: url(../assets/img/ddd.png) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hi {
+  font-family: "Military_RPG";
+  font-size: 55px;
+  margin-right: 50px;
+}
+.hi::after {
+  display: inline-block;
+  content: "";
+  background: url(../assets/img/svg/arrow.svg);
+  height: inherit;
+  color: azure;
+}

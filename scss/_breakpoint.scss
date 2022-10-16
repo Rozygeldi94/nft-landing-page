@@ -1,0 +1,197 @@
+@media screen and (max-width: 992px) {
+  .form-1 {
+    display: none;
+  }
+
+  .discover-nft {
+    gap: 35px !important;
+  }
+  .burger-menu__open {
+    display: none;
+  }
+  .nft-left .nft-left__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 55px;
+  }
+  .nft-left__desc {
+    font-size: 25px;
+  }
+  .nft-right {
+    min-width: 350px;
+    &-wrapper {
+      width: 320px;
+    }
+    & &__img {
+      min-width: 320px;
+      min-height: 332px;
+      height: 332px;
+      margin-top: 15px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .btn-22 {
+    display: none;
+  }
+  .form-1 {
+    display: block;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__nav {
+    justify-content: flex-start !important;
+  }
+  .nav-image {
+    margin-right: 43%;
+  }
+  .burger-menu__open {
+    display: block;
+    width: 35px;
+    height: 30px;
+    position: relative;
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 35px;
+      height: 2px;
+      background: rgb(241, 235, 235);
+      transform: translate(-50%, -50%);
+    }
+    span:nth-child(1) {
+      top: calc(50% - 7px);
+    }
+    span:nth-child(3) {
+      top: calc(50% + 7px);
+    }
+  }
+  .burger-menu {
+    width: 100%;
+    height: 100vh;
+    background: rgb(56, 161, 223);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    transition: transform 1s;
+    z-index: 10;
+    &__items {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    li {
+      font-size: 24px;
+      color: rgb(35, 33, 37);
+      font-weight: 700;
+    }
+    &__form {
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      transform: translateX(-50%);
+    }
+    &__search {
+      position: relative;
+      padding-bottom: 5px;
+    }
+    &__input {
+      color: #000;
+      font-weight: 600;
+      background: rgb(214, 223, 241);
+      padding-right: 40px;
+
+      &::placeholder {
+        color: black;
+        font-weight: 500;
+      }
+      & + a {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translate(0, -50%);
+        i {
+          color: #000;
+        }
+      }
+    }
+    &__close {
+      width: 35px;
+      height: 30px;
+      position: fixed;
+      top: 20px;
+      right: 40px;
+
+      span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 35px;
+        height: 2px;
+        background: rgb(70, 36, 36);
+        transform: translate(-50%, -50%);
+      }
+      span:nth-child(1) {
+        transform: rotate(-45deg);
+      }
+      span:nth-child(2) {
+        transform: rotate(45deg);
+      }
+    }
+  }
+  .burger-menu._active {
+    transform: translateY(0);
+    transition: transform 1s;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nav-image {
+    margin-right: 27%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .nft-left {
+    margin: 0 auto;
+  }
+  .nft-right {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 300px) {
+  .nft-right {
+    margin: 0 auto;
+  }
+  .nft-left .nft-left__title {
+    text-align: center;
+    line-height: 59px;
+    margin-bottom: 30px !important;
+  }
+  .nft-left__desc {
+    text-align: center;
+  }
+  .center1-logo-buttons {
+    justify-content: center;
+  }
+
+  .ll {
+    display: flex;
+    justify-content: center !important;
+  }
+  .center1-logo img:first-child {
+    display: none;
+  }
+  .center1-logo {
+    justify-content: center !important;
+  }
+}

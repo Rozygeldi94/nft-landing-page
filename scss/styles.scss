@@ -1,0 +1,39 @@
+@import "~normalize.css"; /*~ bu tilda znagy node_modules papka ichinden gozlap almaly diymegi anlatya*/
+@import "fonts.scss";
+
+$mm: 56px;
+body {
+  background: url(../assets/img/ddd.png) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.hi {
+  display: grid;
+  user-select: none;
+  font-family: "Military_RPG";
+  font-size: $mm;
+  margin-right: 50px;
+  &::after {
+    display: inline-block;
+    content: "";
+    background: url(../assets/img/svg/arrow.svg) no-repeat;
+    height: 50px;
+    width: 190px;
+
+    color: azure;
+  }
+}
+h2 {
+  font-size: 93px;
+  color: yellow;
+  &::after {
+    content: "*";
+    margin-left: 22px;
+    background: #000;
+    color: rgb(135, 212, 62);
+  }
+}
+.fffs {
+  width: 220px;
+  height: 333px;
+}
